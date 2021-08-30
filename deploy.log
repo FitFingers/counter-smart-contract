@@ -1,0 +1,118 @@
+Compiling your contracts...
+===========================
+✔ Fetching solc version list from solc-bin. Attempt #1
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migrations.js
+=======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        9206714
+   > block timestamp:     1630342860
+   > account:             0xe681B4AE322c131178e339AA77427D61509Db891
+   > balance:             2.53047616496381587
+   > gas used:            160384 (0x27280)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000320768 ETH
+
+   -------------------------------------
+   > Total cost:         0.000320768 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'Counter'
+   -------------------
+   > block number:        9206716
+   > block timestamp:     1630342868
+   > account:             0xe681B4AE322c131178e339AA77427D61509Db891
+   > balance:             2.53024565896381587
+   > gas used:            87939 (0x15783)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000175878 ETH
+
+   -------------------------------------
+   > Total cost:         0.000175878 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.000496646 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 29999972 (0x1c9c364)
+
+
+1_initial_migrations.js
+=======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x1ce2098cff5bf8e7125a433ade1e0ada42bbc0fecaa610a29793e50f67e3be16
+   > Blocks: 1            Seconds: 16
+   > contract address:    0x15b63320848A0eA4fA921A5D873D83f36Cb3F037
+   > block number:        9206715
+   > block timestamp:     1630342894
+   > account:             0xe681B4AE322c131178e339AA77427D61509Db891
+   > balance:             2.52726325296381587
+   > gas used:            176684 (0x2b22c)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00353368 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00353368 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'Counter'
+   -------------------
+   > transaction hash:    0x142ba5fc63262c89988d1499e518a33b3d8e164715c9fb2865372dabe4579dcc
+   > Blocks: 1            Seconds: 13
+   > contract address:    0x889a6e779F4eB0198cc428D4dF58f8289955eD93
+   > block number:        9206717
+   > block timestamp:     1630342924
+   > account:             0xe681B4AE322c131178e339AA77427D61509Db891
+   > balance:             2.52434619296381587
+   > gas used:            100139 (0x1872b)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00200278 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00200278 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.00553646 ETH
