@@ -1,5 +1,5 @@
-const Counter = artifacts.require("./Counter.sol");
+const MyContractFactory = artifacts.require("./MyContractFactory.sol");
 
 module.exports = async (deployer) => {
-  await deployer.deploy(Counter, { gas: 5000000 });
+  await deployer.deploy(MyContractFactory, { gas: 5000000 });
 };
