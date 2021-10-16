@@ -24,12 +24,11 @@ const mainnetNodeUrl = isInfura
 
 module.exports = {
   networks: {
-    // development: {
-    //   host: "localhost",
-    //   port: 7545,
-    //   gas: 5000000,
-    //   network_id: "*", // Match any network id
-    // },
+    development: {
+      host: "127.0.0.1",
+      port: 8545,
+      network_id: "*",
+    },
     rinkeby: {
       provider: function () {
         return new HDWalletProvider(MNEMONIC, rinkebyNodeUrl);
@@ -59,15 +58,13 @@ module.exports = {
       settings: {
         optimizer: {
           enabled: true,
-          runs: 20   // Optimize for how many times you intend to run the code
+          runs: 20, // Optimize for how many times you intend to run the code
         },
       },
     },
   },
-  plugins: [
-    'truffle-plugin-verify'
-  ],
+  plugins: ["truffle-plugin-verify"],
   api_keys: {
-    etherscan: 'ETHERSCAN_API_KEY_FOR_VERIFICATION'
-  }
+    etherscan: "ETHERSCAN_API_KEY_FOR_VERIFICATION",
+  },
 };
